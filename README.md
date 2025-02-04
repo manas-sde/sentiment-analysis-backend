@@ -7,7 +7,7 @@ This is a **FastAPI** backend for sentiment analysis of movie reviews. It utiliz
 ## 🚀 Features
 
 - **Sentiment Analysis API**: Analyze the sentiment of movie reviews (positive/negative).
-- **PostgreSQL Database**: Stores previously analyzed reviews for faster retrieval.
+- **PostgreSQL Database**: Remote PostgreSQL server deployed on render. Stores previously analyzed reviews for faster retrieval.
 - **FastAPI Framework**: Provides a lightweight and efficient REST API.
 - **Containerized with Docker**: Easily deploy and run in any environment.
 - **Deployed on Render**: Backend runs on Render with a remote PostgreSQL instance.
