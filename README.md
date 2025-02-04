@@ -1,5 +1,13 @@
 # Sentiment Analysis Backend
 
+
+## 🌐 Live API URL
+
+The backend is deployed and accessible at:
+
+[Sentiment Analysis API](https://sentiment-analysis-backend-nu7h.onrender.com/docs)
+
+
 ## 📌 Overview
 
 This is a **FastAPI** backend for sentiment analysis of movie reviews. It utilizes a **fine-tuned classification model**, trained on open IMDb movie review data available on **Kaggle**. The model is deployed on the **Cohere platform** and serves predictions via API calls.
@@ -11,12 +19,6 @@ This is a **FastAPI** backend for sentiment analysis of movie reviews. It utiliz
 - **FastAPI Framework**: Provides a lightweight and efficient REST API.
 - **Containerized with Docker**: Easily deploy and run in any environment.
 - **Deployed on Render**: Backend runs on Render with a remote PostgreSQL instance.
-
-## 🌐 Live API URL
-
-The backend is deployed and accessible at:
-
-[Sentiment Analysis API](https://sentiment-analysis-backend-nu7h.onrender.com/docs)
 
 ## 🏗️ Project Structure
 
