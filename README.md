@@ -54,6 +54,14 @@ CLASSIFY_MODEL_ID=<your_cohere_model_id>
 DATABASE_URL=<your_postgresql_url>
 ```
 
+```
+Note - 
+If you do not have fine tuned model for classification, you have to use 'large' model of cohere, and provide examples array while making call to model.
+
+Examples are already written, but currently commented because this backend used fine tuned model. So, you have to uncomment those examples while using 'large' model, inside [cohereUtilities.py] file.
+
+```
+
 ### 3️⃣ Build and Run the Application using Docker
 
 ```sh
