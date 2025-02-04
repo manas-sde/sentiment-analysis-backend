@@ -5,12 +5,18 @@ from .utility import cohereUtilities
 from .db import create_table, fetch_review_sentiment, insert_review_sentiment, fetch_reviews
 import traceback
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 try:
     # Initialize DB Table
@@ -35,7 +41,6 @@ def post_sentiment_analysis(reviews: ProductReviews):
         existing_record = fetch_review_sentiment(review)
 
         if existing_record:
-            print(existing_record)
             responses.append({
                 "review": existing_record["review"],
                 "reviewSentiment": existing_record["review_sentiment"],
